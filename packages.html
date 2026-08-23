@@ -20,6 +20,7 @@ footer{background:#050505;padding:75px 0 30px}.footer-grid{display:grid;grid-tem
 .form-wrap{max-width:720px}.form{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:35px}.form .full{grid-column:1/-1}.form label{font-size:9px;letter-spacing:2px;text-transform:uppercase}.form input,.form select,.form textarea{width:100%;margin-top:8px;padding:15px;border:1px solid #d8d3ca;background:#fff;font:inherit}.form textarea{min-height:140px;resize:vertical}
 @media(max-width:900px){.nav-links{display:none;position:absolute;top:75px;right:5%;width:280px;background:rgba(9,9,9,.97);padding:15px;border:1px solid var(--line);flex-direction:column}.nav-links.open{display:flex}.menu-toggle{display:flex}.nav-btn{display:none}.grid2,.grid3,.price-grid{grid-template-columns:1fr}.grid4{grid-template-columns:1fr 1fr}.price-card.featured{transform:none}.gallery{grid-template-columns:1fr 1fr}.gallery figure,.gallery figure:nth-child(n){grid-column:span 1;height:360px}.footer-grid{grid-template-columns:1fr}.copyright{flex-direction:column;gap:10px}}
 @media(max-width:600px){section{padding:85px 0}.page-hero{min-height:72vh;padding-bottom:65px}.page-title{font-size:66px}.grid4{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.gallery figure,.gallery figure:nth-child(n){height:390px}.form{grid-template-columns:1fr}.form .full{grid-column:auto}}
+.footer-contact a{line-height:1.65}.footer-contact a:hover{color:var(--gold)}
 </style></head><body>
 
 <header><nav class="nav">
@@ -46,21 +47,45 @@ footer{background:#050505;padding:75px 0 30px}.footer-grid{display:grid;grid-tem
 <section class="dark"><div class="container"><div class="section-label">The Experience</div><h2 class="section-title">From first hello<br><em>to forever.</em></h2><div class="grid4" style="margin-top:50px"><div class="card"><div class="section-label">01</div><h3>Tell Us</h3><p>Share your date, venue and vision.</p></div><div class="card"><div class="section-label">02</div><h3>Plan</h3><p>Build the coverage around your events.</p></div><div class="card"><div class="section-label">03</div><h3>Live</h3><p>Be present. We capture the in-between.</p></div><div class="card"><div class="section-label">04</div><h3>Relive</h3><p>Receive a story made to last.</p></div></div></div></section>
 
 
-<footer><div class="container"><div class="footer-grid">
-<div><div class="footer-logo">GLOOMY BRIDAL</div><p class="footer-description">Founded by Amit Podder (Partho)<br>Founder & Chief Photographer<br><br>Wedding Photography & Cinematic Films.<br>Capturing emotions, preserving stories, creating memories.</p></div>
-<div><div class="footer-title">EXPLORE</div><div class="footer-links">
-<a href="index.html">Home</a><a href="portfolio.html">Portfolio</a><a href="stories.html">Stories</a><a href="services.html">Services</a><a href="packages.html">Packages</a><a href="about.html">About</a><a href="contact.html">Contact</a>
-</div></div>
-<div><div class="footer-title">FOLLOW</div><div class="footer-links">
-<a href="https://www.instagram.com/gloomybridal/" target="_blank">Instagram</a>
-<a href="https://www.facebook.com/GloomyBridal" target="_blank">Facebook</a>
-<a href="https://wa.me/8801679731213" target="_blank">WhatsApp</a>
-<a href="https://www.youtube.com/@gloomybridal" target="_blank">YouTube</a>
-</div></div>
-</div><div class="copyright"><span>© 2026 Gloomy Bridal</span><span>Founded by Amit Podder (Partho) · Bogura • Dhaka • Nationwide</span></div></div></footer>
+
 <a href="https://wa.me/8801679731213" class="whatsapp" target="_blank" aria-label="Chat on WhatsApp">WA</a>
 
 <script>
 const h=document.querySelector("header");window.addEventListener("scroll",()=>h.classList.toggle("scrolled",scrollY>50));
 const b=document.querySelector(".menu-toggle"),n=document.querySelector(".nav-links");if(b)b.onclick=()=>n.classList.toggle("open");
-</script></body></html>
+</script><footer>
+<div class="container">
+<div class="footer-grid">
+<div>
+<div class="footer-logo">GLOOMY BRIDAL</div>
+<p class="footer-description">Founded by Amit Podder (Partho)<br>Founder & Chief Photographer<br><br>Wedding Photography & Cinematic Films.<br>Capturing emotions, preserving stories, creating memories.</p>
+</div>
+<div>
+<div class="footer-title">EXPLORE</div>
+<div class="footer-links">
+<a href="index.html">Home</a>
+<a href="portfolio.html">Portfolio</a>
+<a href="stories.html">Stories</a>
+<a href="services.html">Services</a>
+<a href="packages.html">Packages</a>
+<a href="about.html">About</a>
+<a href="contact.html">Contact</a>
+</div>
+</div>
+<div>
+<div class="footer-title">GET IN TOUCH</div>
+<div class="footer-links footer-contact">
+<a href="mailto:gloomybridal@gmail.com">✉&nbsp;&nbsp; gloomybridal@gmail.com</a>
+<a href="tel:+8801754764258">☎&nbsp;&nbsp; 01754 764258</a>
+<a href="tel:+8801679731213">☎&nbsp;&nbsp; 01679 731213</a>
+<a href="https://maps.google.com/?q=Kazi+Nazrul+Islam+Sarak,+Nazib+Mansion+Market,+Shop+27,+Thana+Road,+Bogura" target="_blank">⌖&nbsp;&nbsp; Kazi Nazrul Islam Sarak, Nazib Mansion Market,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Shop 27, Thana Road, Bogura</a>
+</div>
+</div>
+</div>
+<div class="copyright">
+<span>© 2026 GLOOMY BRIDAL. ALL RIGHTS RESERVED.</span>
+<span>BOGURA · DHAKA · NATIONWIDE</span>
+</div>
+</div>
+</footer>
+</body></html>
