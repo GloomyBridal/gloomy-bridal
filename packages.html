@@ -3,7 +3,7 @@
 :root{--bg:#090909;--soft:#111;--paper:#f4f1eb;--text:#f4f0e9;--muted:#aaa49b;--gold:#c9a96a;--line:rgba(255,255,255,.12)}
 *{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-family:"DM Sans",sans-serif}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.container{width:min(1200px,90%);margin:auto}
 header{position:fixed;z-index:1000;top:0;left:0;width:100%;padding:22px 0;transition:.35s}header.scrolled{background:rgba(9,9,9,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
-.nav{width:min(1300px,90%);margin:auto;display:flex;align-items:center;justify-content:space-between;gap:25px}.logo img{width:155px;height:auto}.nav-links{display:flex;gap:28px;list-style:none}.nav-links a{font-size:10px;letter-spacing:2px;text-transform:uppercase}.nav-links a:hover{color:var(--gold)}.nav-btn,.btn{border:1px solid rgba(255,255,255,.35);padding:13px 21px;font-size:10px;letter-spacing:2px;text-transform:uppercase;display:inline-block;transition:.3s}.nav-btn:hover,.btn-outline:hover{background:#fff;color:#111}.btn-primary{background:var(--gold);color:#111;border-color:var(--gold)}.btn:hover{transform:translateY(-2px)}
+.nav{width:min(1300px,90%);margin:auto;display:flex;align-items:center;justify-content:space-between;gap:25px}.logo{display:flex;flex-direction:column;align-items:flex-start;line-height:1}.logo img{width:155px;height:auto}.logo-tagline{display:block;margin-top:4px;color:var(--gold);font-size:7px;font-weight:600;letter-spacing:1.6px;text-transform:uppercase;white-space:nowrap}.nav-links{display:flex;gap:28px;list-style:none}.nav-links a{font-size:10px;letter-spacing:2px;text-transform:uppercase}.nav-links a:hover{color:var(--gold)}.nav-btn,.btn{border:1px solid rgba(255,255,255,.35);padding:13px 21px;font-size:10px;letter-spacing:2px;text-transform:uppercase;display:inline-block;transition:.3s}.nav-btn:hover,.btn-outline:hover{background:#fff;color:#111}.btn-primary{background:var(--gold);color:#111;border-color:var(--gold)}.btn:hover{transform:translateY(-2px)}
 .menu-toggle{display:none;border:1px solid rgba(255,255,255,.35);background:transparent;color:#fff;width:44px;height:40px;align-items:center;justify-content:center}.menu-toggle span,.menu-toggle span:before,.menu-toggle span:after{display:block;width:18px;height:1px;background:#fff;position:relative}.menu-toggle span:before,.menu-toggle span:after{content:"";position:absolute;left:0}.menu-toggle span:before{top:-6px}.menu-toggle span:after{top:6px}
 .page-hero{min-height:78vh;display:flex;align-items:end;padding:160px 0 90px;position:relative;overflow:hidden;background-size:cover;background-position:center}.page-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.9),rgba(0,0,0,.18))}.page-hero .container{position:relative;z-index:2}.eyebrow,.section-label{color:var(--gold);font-size:10px;letter-spacing:4px;text-transform:uppercase}.page-title{font-family:"Cormorant Garamond",serif;font-size:clamp(70px,10vw,150px);font-weight:300;line-height:.82;margin-top:18px}.page-title em{font-style:italic}.page-subtitle{max-width:620px;color:#d0ccc5;line-height:1.8;margin-top:30px}
 section{padding:115px 0}.section-title{font-family:"Cormorant Garamond",serif;font-size:clamp(48px,6vw,82px);font-weight:400;line-height:.92;margin-top:14px}.section-title em{font-style:italic}
@@ -20,10 +20,30 @@ footer{background:#050505;padding:75px 0 30px}.footer-grid{display:grid;grid-tem
 .form-wrap{max-width:720px}.form{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:35px}.form .full{grid-column:1/-1}.form label{font-size:9px;letter-spacing:2px;text-transform:uppercase}.form input,.form select,.form textarea{width:100%;margin-top:8px;padding:15px;border:1px solid #d8d3ca;background:#fff;font:inherit}.form textarea{min-height:140px;resize:vertical}
 @media(max-width:900px){.nav-links{display:none;position:absolute;top:75px;right:5%;width:280px;background:rgba(9,9,9,.97);padding:15px;border:1px solid var(--line);flex-direction:column}.nav-links.open{display:flex}.menu-toggle{display:flex}.nav-btn{display:none}.grid2,.grid3,.price-grid{grid-template-columns:1fr}.grid4{grid-template-columns:1fr 1fr}.price-card.featured{transform:none}.gallery{grid-template-columns:1fr 1fr}.gallery figure,.gallery figure:nth-child(n){grid-column:span 1;height:360px}.footer-grid{grid-template-columns:1fr}.copyright{flex-direction:column;gap:10px}}
 @media(max-width:600px){section{padding:85px 0}.page-hero{min-height:72vh;padding-bottom:65px}.page-title{font-size:66px}.grid4{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.gallery figure,.gallery figure:nth-child(n){height:390px}.form{grid-template-columns:1fr}.form .full{grid-column:auto}}
+
+/* ===== FINAL GLOBAL POLISH ===== */
+.site-footer{background:#050505;padding:82px 0 28px;border-top:1px solid rgba(255,255,255,.08)}
+.footer-top{display:grid;grid-template-columns:1.5fr .8fr 1.2fr;gap:70px;padding-bottom:55px;border-bottom:1px solid rgba(255,255,255,.1)}
+.footer-logo{font-family:"Cormorant Garamond",serif;font-size:42px;letter-spacing:3px;color:#f4f0e9}.footer-logo-tagline{margin-top:-2px;color:var(--gold);font-size:7px;font-weight:600;letter-spacing:2px;text-transform:uppercase}
+.footer-description{color:#8f8b84;max-width:390px;line-height:1.85;font-size:12px;margin-top:18px}
+.footer-founder{margin-top:28px;padding-left:16px;border-left:1px solid #c9a96a;display:grid;gap:4px}
+.footer-founder span,.contact-row small{display:block;color:#c9a96a;font-size:8px;letter-spacing:2.5px;text-transform:uppercase}
+.footer-founder strong{font-family:"Cormorant Garamond",serif;font-size:23px;font-weight:400;color:#f4f0e9}
+.footer-founder small{color:#8f8b84;font-size:11px}
+.footer-title{color:#c9a96a;font-size:9px;letter-spacing:3px;margin-bottom:22px}
+.footer-links a{display:block;color:#aaa49b;font-size:12px;margin-bottom:13px;transition:.25s}.footer-links a:hover{color:#f4f0e9;transform:translateX(3px)}
+.contact-list{display:grid;gap:16px}.contact-row{display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:center;color:#d8d3ca;font-size:12px;line-height:1.5}.contact-icon{width:32px;height:32px;border:1px solid rgba(201,169,106,.45);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#c9a96a;font-size:15px}.contact-row small{margin-bottom:2px}.contact-icon svg{width:17px;height:17px;fill:none;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.footer-bottom{display:flex;justify-content:space-between;gap:20px;padding-top:24px;color:#62605b;font-size:9px;letter-spacing:.7px;text-transform:uppercase}
+.whatsapp{box-shadow:0 10px 30px rgba(0,0,0,.35);transition:.25s}.whatsapp:hover{transform:translateY(-3px) scale(1.03)}
+/* package cards */
+.package-meta{display:flex;justify-content:space-between;gap:20px;align-items:end;margin-bottom:18px}.package-kicker{color:#a9823e;letter-spacing:3px;font-size:9px}.package-note{font-size:10px;color:#777;letter-spacing:1px}.price-card{position:relative;min-height:100%;display:flex;flex-direction:column}.price-card ul{flex:1}.price-card .btn{align-self:flex-start}.price-card.featured{box-shadow:0 22px 60px rgba(0,0,0,.15)}
+@media(max-width:900px){.footer-top{grid-template-columns:1fr;gap:45px}.footer-bottom{flex-direction:column}.footer-founder{max-width:360px}}
+@media(max-width:600px){.site-footer{padding:65px 0 25px}.footer-logo{font-size:36px}.contact-row{font-size:11px}}
+
 </style></head><body>
 
 <header><nav class="nav">
-<a href="index.html" class="logo"><img src="logo%20whiteee.png" alt="Gloomy Bridal"></a>
+<a href="index.html" class="logo"><img src="logo%20whiteee.png" alt="Gloomy Bridal"><span class="logo-tagline">WEDDING PHOTOGRAPHY &amp; CINEMATIC FILMS</span></a>
 <ul class="nav-links"><li><a href="index.html" class="">Home</a></li>
 <li><a href="portfolio.html" class="">Portfolio</a></li>
 <li><a href="stories.html" class="">Stories</a></li>
@@ -38,26 +58,41 @@ footer{background:#050505;padding:75px 0 30px}.footer-grid{display:grid;grid-tem
 <section class="page-hero" style="background-image:url('Fbs.jpg')"><div class="container"><div class="eyebrow">Investment & Packages</div><h1 class="page-title">Investment & Packages</h1></div></section>
 
 <section class="paper"><div class="container"><div class="section-label">Investment</div><h2 class="section-title">Choose the<br><em>way you remember.</em></h2><p class="muted" style="max-width:680px;line-height:1.8;margin-top:25px">Starting collections are shown as a guide. Final coverage and pricing are tailored around your events, date and story.</p>
-<div class="price-grid" style="margin-top:55px">
-<div class="price-card"><div class="num">COLLECTION I</div><h3>Essential</h3><p>For intimate celebrations and focused wedding coverage.</p><ul><li>Wedding photography coverage</li><li>Curated edited gallery</li><li>Online delivery</li><li>Planning consultation</li></ul><a class="btn" href="contact.html">Enquire</a></div>
-<div class="price-card featured"><div class="num">COLLECTION II</div><h3>Signature</h3><p>Our balanced choice for couples who want a fuller story.</p><ul><li>Extended wedding coverage</li><li>Bridal & couple portraits</li><li>Premium edited gallery</li><li>Cinematic film option</li></ul><a class="btn btn-primary" href="contact.html">Check Your Date</a></div>
-<div class="price-card"><div class="num">COLLECTION III</div><h3>Heirloom</h3><p>Photography and cinematic storytelling together.</p><ul><li>Full-day photography</li><li>Cinematic wedding film</li><li>Premium album option</li><li>Priority planning support</li></ul><a class="btn" href="contact.html">Build Your Collection</a></div>
+<div class="package-intro"><div><div class="section-label">Three ways to begin</div><h3 style="font-family:"Cormorant Garamond",serif;font-size:34px;font-weight:400;margin-top:12px">Built around your celebration.</h3></div><p class="muted" style="max-width:480px;line-height:1.8">These collections are starting points. We can shape coverage around your date, events, team size and final deliverables.</p></div><div class="price-grid" style="margin-top:45px">
+<div class="price-card"><div class="package-meta"><span class="package-kicker">COLLECTION I</span><span class="package-note">INTIMATE</span></div><h3>Essential</h3><p>For intimate celebrations and focused wedding coverage.</p><ul><li>Wedding photography coverage</li><li>Curated edited gallery</li><li>Online delivery</li><li>Planning consultation</li></ul><a class="btn" href="contact.html">Enquire</a></div>
+<div class="price-card featured"><div class="package-meta"><span class="package-kicker">COLLECTION II</span><span class="package-note">MOST BALANCED</span></div><h3>Signature</h3><p>Our balanced choice for couples who want a fuller story.</p><ul><li>Extended wedding coverage</li><li>Bridal & couple portraits</li><li>Premium edited gallery</li><li>Cinematic film option</li></ul><a class="btn btn-primary" href="contact.html">Check Your Date</a></div>
+<div class="price-card"><div class="package-meta"><span class="package-kicker">COLLECTION III</span><span class="package-note">FULL STORY</span></div><h3>Heirloom</h3><p>Photography and cinematic storytelling together.</p><ul><li>Full-day photography</li><li>Cinematic wedding film</li><li>Premium album option</li><li>Priority planning support</li></ul><a class="btn" href="contact.html">Build Your Collection</a></div>
 </div></div></section>
 <section class="dark"><div class="container"><div class="section-label">The Experience</div><h2 class="section-title">From first hello<br><em>to forever.</em></h2><div class="grid4" style="margin-top:50px"><div class="card"><div class="section-label">01</div><h3>Tell Us</h3><p>Share your date, venue and vision.</p></div><div class="card"><div class="section-label">02</div><h3>Plan</h3><p>Build the coverage around your events.</p></div><div class="card"><div class="section-label">03</div><h3>Live</h3><p>Be present. We capture the in-between.</p></div><div class="card"><div class="section-label">04</div><h3>Relive</h3><p>Receive a story made to last.</p></div></div></div></section>
 
 
-<footer><div class="container"><div class="footer-grid">
-<div><div class="footer-logo">GLOOMY BRIDAL</div><p class="footer-description">Founded by Amit Podder (Partho)<br>Founder & Chief Photographer<br><br>Wedding Photography & Cinematic Films.<br>Capturing emotions, preserving stories, creating memories.</p></div>
-<div><div class="footer-title">EXPLORE</div><div class="footer-links">
-<a href="index.html">Home</a><a href="portfolio.html">Portfolio</a><a href="stories.html">Stories</a><a href="services.html">Services</a><a href="packages.html">Packages</a><a href="about.html">About</a><a href="contact.html">Contact</a>
-</div></div>
-<div><div class="footer-title">FOLLOW</div><div class="footer-links">
-<a href="https://www.instagram.com/gloomybridal/" target="_blank">Instagram</a>
-<a href="https://www.facebook.com/GloomyBridal" target="_blank">Facebook</a>
-<a href="https://wa.me/8801679731213" target="_blank">WhatsApp</a>
-<a href="https://www.youtube.com/@gloomybridal" target="_blank">YouTube</a>
-</div></div>
-</div><div class="copyright"><span>© 2026 Gloomy Bridal</span><span>Founded by Amit Podder (Partho) · Bogura • Dhaka • Nationwide</span></div></div></footer>
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-logo">GLOOMY BRIDAL</div><div class="footer-logo-tagline">WEDDING PHOTOGRAPHY &amp; CINEMATIC FILMS</div>
+        <p class="footer-description">Wedding Photography &amp; Cinematic Films.<br>Capturing emotions, preserving stories, creating memories.</p>
+        <div class="footer-founder"><span>FOUNDED BY</span><strong>Amit Podder (Partho)</strong><small>Founder &amp; Chief Photographer</small></div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-title">EXPLORE</div>
+        <div class="footer-links">
+          <a href="index.html">Home</a><a href="portfolio.html">Portfolio</a><a href="stories.html">Stories</a><a href="services.html">Services</a><a href="packages.html">Packages</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-title">GET IN TOUCH</div>
+        <div class="contact-list">
+          <a href="tel:+8801754764258" class="contact-row"><span class="contact-icon">☎</span><span><small>PHONE</small>01754 764258</span></a>
+          <a href="tel:+8801679731213" class="contact-row"><span class="contact-icon">☎</span><span><small>PHONE / WHATSAPP</small>01679 731213</span></a>
+          <div class="contact-row"><span class="contact-icon">⌖</span><span><small>BASE</small>Bogura, Bangladesh</span></div>
+          <div class="contact-row"><span class="contact-icon">◎</span><span><small>SERVICE AREA</small>Bogura • Dhaka • Nationwide</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Gloomy Bridal. All rights reserved.</span><span>Luxury Wedding Photography &amp; Cinematic Films</span></div>
+  </div>
+</footer>
 <a href="https://wa.me/8801679731213" class="whatsapp" target="_blank" aria-label="Chat on WhatsApp">WA</a>
 
 <script>
