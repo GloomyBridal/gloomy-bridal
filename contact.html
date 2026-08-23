@@ -1,0 +1,76 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta name="description" content="Contact & Book Your Date — Gloomy Bridal, luxury wedding photography and cinematic films in Bogura, Dhaka and Bangladesh."><link rel="icon" href="favicon.ico"><title>Contact & Book Your Date | Gloomy Bridal</title><style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
+:root{--bg:#090909;--soft:#111;--paper:#f4f1eb;--text:#f4f0e9;--muted:#aaa49b;--gold:#c9a96a;--line:rgba(255,255,255,.12)}
+*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{background:var(--bg);color:var(--text);font-family:"DM Sans",sans-serif}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}.container{width:min(1200px,90%);margin:auto}
+header{position:fixed;z-index:1000;top:0;left:0;width:100%;padding:22px 0;transition:.35s}header.scrolled{background:rgba(9,9,9,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
+.nav{width:min(1300px,90%);margin:auto;display:flex;align-items:center;justify-content:space-between;gap:25px}.logo img{width:155px;height:auto}.nav-links{display:flex;gap:28px;list-style:none}.nav-links a{font-size:10px;letter-spacing:2px;text-transform:uppercase}.nav-links a:hover{color:var(--gold)}.nav-btn,.btn{border:1px solid rgba(255,255,255,.35);padding:13px 21px;font-size:10px;letter-spacing:2px;text-transform:uppercase;display:inline-block;transition:.3s}.nav-btn:hover,.btn-outline:hover{background:#fff;color:#111}.btn-primary{background:var(--gold);color:#111;border-color:var(--gold)}.btn:hover{transform:translateY(-2px)}
+.menu-toggle{display:none;border:1px solid rgba(255,255,255,.35);background:transparent;color:#fff;width:44px;height:40px;align-items:center;justify-content:center}.menu-toggle span,.menu-toggle span:before,.menu-toggle span:after{display:block;width:18px;height:1px;background:#fff;position:relative}.menu-toggle span:before,.menu-toggle span:after{content:"";position:absolute;left:0}.menu-toggle span:before{top:-6px}.menu-toggle span:after{top:6px}
+.page-hero{min-height:78vh;display:flex;align-items:end;padding:160px 0 90px;position:relative;overflow:hidden;background-size:cover;background-position:center}.page-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.9),rgba(0,0,0,.18))}.page-hero .container{position:relative;z-index:2}.eyebrow,.section-label{color:var(--gold);font-size:10px;letter-spacing:4px;text-transform:uppercase}.page-title{font-family:"Cormorant Garamond",serif;font-size:clamp(70px,10vw,150px);font-weight:300;line-height:.82;margin-top:18px}.page-title em{font-style:italic}.page-subtitle{max-width:620px;color:#d0ccc5;line-height:1.8;margin-top:30px}
+section{padding:115px 0}.section-title{font-family:"Cormorant Garamond",serif;font-size:clamp(48px,6vw,82px);font-weight:400;line-height:.92;margin-top:14px}.section-title em{font-style:italic}
+.dark{background:var(--soft)}.paper{background:var(--paper);color:#161616}.muted{color:var(--muted)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:1px}
+.card{border:1px solid var(--line);padding:35px}.paper .card{background:#fff;border-color:rgba(0,0,0,.1)}.card h3{font-family:"Cormorant Garamond",serif;font-size:32px;font-weight:400;margin:22px 0 12px}.card p{font-size:13px;line-height:1.8;color:var(--muted)}.paper .card p{color:#666}
+.photo-tile{height:560px;overflow:hidden;position:relative}.photo-tile img{width:100%;height:100%;object-fit:cover;transition:.8s}.photo-tile:hover img{transform:scale(1.05)}.photo-tile .caption{position:absolute;left:25px;right:25px;bottom:25px;z-index:2}.photo-tile:after{content:"";position:absolute;inset:0;background:linear-gradient(transparent,rgba(0,0,0,.8))}
+.big-image{min-height:620px;background-size:cover;background-position:center}
+.list{list-style:none;display:grid;gap:14px;margin-top:25px}.list li{padding:15px 0;border-bottom:1px solid var(--line);font-size:13px}.list li:before{content:"—";color:var(--gold);margin-right:12px}
+footer{background:#050505;padding:75px 0 30px}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:60px;padding-bottom:55px;border-bottom:1px solid var(--line)}.footer-logo{font-family:"Cormorant Garamond",serif;font-size:42px;letter-spacing:3px}.footer-description{color:#888;max-width:360px;line-height:1.8;font-size:12px;margin-top:18px}.footer-title{color:var(--gold);font-size:9px;letter-spacing:3px;margin-bottom:20px}.footer-links a{display:block;color:#aaa;font-size:12px;margin-bottom:12px}.copyright{display:flex;justify-content:space-between;padding-top:25px;color:#666;font-size:10px}
+.whatsapp{position:fixed;right:22px;bottom:22px;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;z-index:999;font-weight:600}
+.gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}.gallery figure{height:430px;overflow:hidden;position:relative}.gallery figure:nth-child(1){grid-column:span 7}.gallery figure:nth-child(2){grid-column:span 5}.gallery figure:nth-child(3){grid-column:span 5}.gallery figure:nth-child(4){grid-column:span 7}.gallery img{width:100%;height:100%;object-fit:cover;transition:.7s}.gallery figure:hover img{transform:scale(1.05)}
+.price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.price-card{padding:38px;border:1px solid #ddd;background:#fff}.price-card.featured{background:#0b0b0b;color:#fff;border-color:#0b0b0b;transform:translateY(-12px)}.price-card .num{color:#a9823e;letter-spacing:3px;font-size:9px}.price-card h3{font-family:"Cormorant Garamond",serif;font-size:38px;font-weight:400;margin:20px 0 12px}.price-card p{color:#777;line-height:1.8;font-size:13px}.price-card.featured p{color:#bbb}.price-card ul{list-style:none;margin:25px 0;display:grid;gap:10px}.price-card li{font-size:12px}.price-card li:before{content:"—";color:var(--gold);margin-right:9px}
+.form-wrap{max-width:720px}.form{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:35px}.form .full{grid-column:1/-1}.form label{font-size:9px;letter-spacing:2px;text-transform:uppercase}.form input,.form select,.form textarea{width:100%;margin-top:8px;padding:15px;border:1px solid #d8d3ca;background:#fff;font:inherit}.form textarea{min-height:140px;resize:vertical}
+@media(max-width:900px){.nav-links{display:none;position:absolute;top:75px;right:5%;width:280px;background:rgba(9,9,9,.97);padding:15px;border:1px solid var(--line);flex-direction:column}.nav-links.open{display:flex}.menu-toggle{display:flex}.nav-btn{display:none}.grid2,.grid3,.price-grid{grid-template-columns:1fr}.grid4{grid-template-columns:1fr 1fr}.price-card.featured{transform:none}.gallery{grid-template-columns:1fr 1fr}.gallery figure,.gallery figure:nth-child(n){grid-column:span 1;height:360px}.footer-grid{grid-template-columns:1fr}.copyright{flex-direction:column;gap:10px}}
+@media(max-width:600px){section{padding:85px 0}.page-hero{min-height:72vh;padding-bottom:65px}.page-title{font-size:66px}.grid4{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.gallery figure,.gallery figure:nth-child(n){height:390px}.form{grid-template-columns:1fr}.form .full{grid-column:auto}}
+</style></head><body>
+
+<header><nav class="nav">
+<a href="index.html" class="logo"><img src="logo%20whiteee.png" alt="Gloomy Bridal"></a>
+<ul class="nav-links"><li><a href="index.html" class="">Home</a></li>
+<li><a href="portfolio.html" class="">Portfolio</a></li>
+<li><a href="stories.html" class="">Stories</a></li>
+<li><a href="services.html" class="">Services</a></li>
+<li><a href="about.html" class="">About</a></li>
+<li><a href="packages.html" class="">Packages</a></li>
+<li><a href="contact.html" class="active">Contact</a></li></ul>
+<a href="contact.html" class="nav-btn">Book Your Date</a>
+<button class="menu-toggle" aria-label="Open menu"><span></span></button>
+</nav></header>
+
+<section class="page-hero" style="background-image:url('587303875_833751206064757_4020338553035033138_n.jpg')"><div class="container"><div class="eyebrow">Contact & Book Your Date</div><h1 class="page-title">Contact & Book Your Date</h1></div></section>
+
+<section class="paper"><div class="container grid2"><div><div class="section-label">Let's Create Something Beautiful</div><h2 class="section-title">YOUR DATE.<br>YOUR STORY.<br><em>YOUR FOREVER.</em></h2><p class="muted" style="max-width:560px;line-height:1.8;margin-top:28px">Tell us about your wedding. We'll reply with availability and package details.</p><div style="margin-top:30px"><a class="btn btn-primary" href="https://wa.me/8801679731213" target="_blank">Chat on WhatsApp</a></div></div>
+<form class="form" id="contactForm">
+<div><label>Your Name</label><input id="name" required placeholder="Bride / Groom"></div>
+<div><label>Wedding Date</label><input id="date" type="date" required></div>
+<div><label>Event Location</label><input id="location" placeholder="Bogura / Dhaka / Other"></div>
+<div><label>Service</label><select id="service"><option>Photography</option><option>Cinematic Film</option><option>Photography + Cinematic</option><option>Pre-Wedding</option><option>Bridal</option></select></div>
+<div class="full"><label>Your Message</label><textarea id="message" placeholder="Tell us a little about your wedding..."></textarea></div>
+<div class="full"><button class="btn btn-primary" type="submit">Send Enquiry on WhatsApp</button></div>
+</form></div></section>
+<section class="dark"><div class="container grid3"><div><div class="section-label">Base</div><h3 style="font-family:'Cormorant Garamond';font-size:34px;font-weight:400;margin-top:15px">Bogura, Bangladesh</h3></div><div><div class="section-label">Phone</div><p style="margin-top:15px">01754 764258<br>01679 731213</p></div><div><div class="section-label">Online</div><p style="margin-top:15px">Instagram · Facebook<br>YouTube · WhatsApp</p></div></div></section>
+<script>
+document.getElementById("contactForm").addEventListener("submit",function(e){e.preventDefault();
+const n=document.getElementById("name").value,d=document.getElementById("date").value,l=document.getElementById("location").value,s=document.getElementById("service").value,m=document.getElementById("message").value;
+const dt=d?new Date(d+"T00:00:00").toLocaleDateString("en-GB",{day:"numeric",month:"long",year:"numeric"}):"Not provided";
+const msg="Assalamu Alaikum 🌸%0A%0AI'd like to enquire about Gloomy Bridal.%0A%0AName: "+encodeURIComponent(n)+"%0AWedding Date: "+encodeURIComponent(dt)+"%0ALocation: "+encodeURIComponent(l)+"%0AService: "+encodeURIComponent(s)+"%0AMessage: "+encodeURIComponent(m);
+window.open("https://wa.me/8801679731213?text="+msg,"_blank");});
+</script>
+
+
+<footer><div class="container"><div class="footer-grid">
+<div><div class="footer-logo">GLOOMY BRIDAL</div><p class="footer-description">Founded by Amit Podder (Partho)<br>Founder & Chief Photographer<br><br>Wedding Photography & Cinematic Films.<br>Capturing emotions, preserving stories, creating memories.</p></div>
+<div><div class="footer-title">EXPLORE</div><div class="footer-links">
+<a href="index.html">Home</a><a href="portfolio.html">Portfolio</a><a href="stories.html">Stories</a><a href="services.html">Services</a><a href="packages.html">Packages</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+</div></div>
+<div><div class="footer-title">FOLLOW</div><div class="footer-links">
+<a href="https://www.instagram.com/gloomybridal/" target="_blank">Instagram</a>
+<a href="https://www.facebook.com/GloomyBridal" target="_blank">Facebook</a>
+<a href="https://wa.me/8801679731213" target="_blank">WhatsApp</a>
+<a href="https://www.youtube.com/@gloomybridal" target="_blank">YouTube</a>
+</div></div>
+</div><div class="copyright"><span>© 2026 Gloomy Bridal</span><span>Founded by Amit Podder (Partho) · Bogura • Dhaka • Nationwide</span></div></div></footer>
+<a href="https://wa.me/8801679731213" class="whatsapp" target="_blank" aria-label="Chat on WhatsApp">WA</a>
+
+<script>
+const h=document.querySelector("header");window.addEventListener("scroll",()=>h.classList.toggle("scrolled",scrollY>50));
+const b=document.querySelector(".menu-toggle"),n=document.querySelector(".nav-links");if(b)b.onclick=()=>n.classList.toggle("open");
+</script></body></html>
