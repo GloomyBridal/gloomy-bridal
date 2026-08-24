@@ -5,7 +5,7 @@
 header{position:fixed;z-index:1000;top:0;left:0;width:100%;padding:22px 0;transition:.35s}header.scrolled{background:rgba(9,9,9,.94);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}
 .nav{width:min(1300px,90%);margin:auto;display:flex;align-items:center;justify-content:space-between;gap:25px}.logo img{width:155px;height:auto}.nav-links{display:flex;gap:28px;list-style:none}.nav-links a{font-size:10px;letter-spacing:2px;text-transform:uppercase}.nav-links a:hover{color:var(--gold)}.nav-btn,.btn{border:1px solid rgba(255,255,255,.35);padding:13px 21px;font-size:10px;letter-spacing:2px;text-transform:uppercase;display:inline-block;transition:.3s}.nav-btn:hover,.btn-outline:hover{background:#fff;color:#111}.btn-primary{background:var(--gold);color:#111;border-color:var(--gold)}.btn:hover{transform:translateY(-2px)}
 .menu-toggle{display:none;border:1px solid rgba(255,255,255,.35);background:transparent;color:#fff;width:44px;height:40px;align-items:center;justify-content:center}.menu-toggle span,.menu-toggle span:before,.menu-toggle span:after{display:block;width:18px;height:1px;background:#fff;position:relative}.menu-toggle span:before,.menu-toggle span:after{content:"";position:absolute;left:0}.menu-toggle span:before{top:-6px}.menu-toggle span:after{top:6px}
-.page-hero{min-height:78vh;display:flex;align-items:end;padding:160px 0 90px;position:relative;overflow:hidden;background-size:cover;background-position:center}.page-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.9),rgba(0,0,0,.18))}.page-hero .container{position:relative;z-index:2}.eyebrow,.section-label{color:var(--gold);font-size:10px;letter-spacing:4px;text-transform:uppercase}.page-title{font-family:"Cormorant Garamond",serif;font-size:clamp(70px,10vw,150px);font-weight:300;line-height:.82;margin-top:18px}.page-title em{font-style:italic}.page-subtitle{max-width:620px;color:#d0ccc5;line-height:1.8;margin-top:30px}
+.page-hero{min-height:78vh;display:flex;align-items:end;padding:160px 0 90px;position:relative;overflow:hidden;background-size:cover;background-position:center}.page-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.9),rgba(0,0,0,.18))}.page-hero .container{position:relative;z-index:2}.eyebrow,.section-label{color:var(--gold);font-size:10px;letter-spacing:4px;text-transform:uppercase}.page-title{font-family:"Cormorant Garamond",serif;font-size:clamp(52px,6.5vw,96px);font-weight:300;line-height:.82;margin-top:18px}.page-title em{font-style:italic}.page-subtitle{max-width:620px;color:#d0ccc5;line-height:1.8;margin-top:30px}
 section{padding:115px 0}.section-title{font-family:"Cormorant Garamond",serif;font-size:clamp(48px,6vw,82px);font-weight:400;line-height:.92;margin-top:14px}.section-title em{font-style:italic}
 .dark{background:var(--soft)}.paper{background:var(--paper);color:#161616}.muted{color:var(--muted)}
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:1px}
@@ -53,6 +53,26 @@ footer{background:#050505;padding:75px 0 30px}.footer-grid{display:grid;grid-tem
 .dark .section-title{color:#f4f0e9!important}
 footer .footer-logo{color:#f4f0e9!important}
 </style>
+
+<style>
+.couple-feature{padding:105px 0;background:#f4f1eb}
+.couple-feature-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:70px;align-items:center}
+.couple-feature-image{position:relative;overflow:hidden;background:#111}
+.couple-feature-image img{width:100%;height:560px;object-fit:cover;object-position:center;transition:.7s}
+.couple-feature-image:hover img{transform:scale(1.02)}
+.couple-feature-copy{max-width:500px}
+.couple-feature-copy .feature-title{font-family:"Cormorant Garamond",serif;font-size:clamp(46px,5vw,76px);font-weight:400;line-height:.94;margin-top:14px;color:#161616}
+.couple-feature-copy .feature-title em{font-style:italic}
+.couple-feature-copy p{color:#666;font-size:13px;line-height:1.9;margin-top:25px}
+@media(max-width:900px){
+  .couple-feature-grid{grid-template-columns:1fr;gap:35px}
+  .couple-feature-image img{height:480px}
+}
+</style>
+
+<style>
+.footer-contact .address-link{display:block;max-width:260px;line-height:1.7!important}
+</style>
 </head><body>
 
 <header><nav class="nav">
@@ -73,6 +93,22 @@ footer .footer-logo{color:#f4f0e9!important}
     <div class="eyebrow">Investment & Packages</div>
     <h1 class="page-title">Choose the perfect<br><em>collection for your story.</em></h1>
     <p class="page-subtitle">Transparent wedding photography and cinematic packages, crafted around your moments, your people and your day.</p>
+  </div>
+</section>
+
+
+<section class="couple-feature">
+  <div class="container">
+    <div class="couple-feature-grid">
+      <div class="couple-feature-image">
+        <img src="518383781_726653480107864_3727261700346952232_n.jpg" alt="Gloomy Bridal couple photography">
+      </div>
+      <div class="couple-feature-copy">
+        <div class="section-label">The Moments</div>
+        <h2 class="feature-title">Your story,<br><em>beautifully preserved.</em></h2>
+        <p>Every glance, every smile and every in-between moment deserves to be remembered. Gloomy Bridal captures your celebration with an elegant, cinematic approach—so the memories feel just as beautiful years from now.</p>
+      </div>
+    </div>
   </div>
 </section>
 
@@ -215,7 +251,7 @@ footer .footer-logo{color:#f4f0e9!important}
 <a href="mailto:gloomybridal@gmail.com">✉&nbsp;&nbsp; gloomybridal@gmail.com</a>
 <a href="tel:+8801754764258">☎&nbsp;&nbsp; 01754 764258</a>
 <a href="tel:+8801679731213">☎&nbsp;&nbsp; 01679 731213</a>
-<a href="https://maps.google.com/?q=Kazi+Nazrul+Islam+Sarak,+Nazib+Mansion+Market,+Shop+27,+Thana+Road,+Bogura" target="_blank">⌖&nbsp;&nbsp; Kazi Nazrul Islam Sarak, Nazib Mansion Market,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Shop 27, Thana Road, Bogura</a>
+<a class="address-link" href="https://maps.google.com/?q=Kazi+Nazrul+Islam+Sarak,+Nazib+Mansion+Market,+Shop+27,+Thana+Road,+Bogura" target="_blank">⌖&nbsp;&nbsp; Kazi Nazrul Islam Sarak, Nazib Mansion Market,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Shop 27, Thana Road, Bogura</a>
 </div>
 </div>
 </div>
