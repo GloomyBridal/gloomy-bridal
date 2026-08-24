@@ -21,6 +21,31 @@ footer{background:#050505;padding:75px 0 30px}.footer-grid{display:grid;grid-tem
 @media(max-width:900px){.nav-links{display:none;position:absolute;top:75px;right:5%;width:280px;background:rgba(9,9,9,.97);padding:15px;border:1px solid var(--line);flex-direction:column}.nav-links.open{display:flex}.menu-toggle{display:flex}.nav-btn{display:none}.grid2,.grid3,.price-grid{grid-template-columns:1fr}.grid4{grid-template-columns:1fr 1fr}.price-card.featured{transform:none}.gallery{grid-template-columns:1fr 1fr}.gallery figure,.gallery figure:nth-child(n){grid-column:span 1;height:360px}.footer-grid{grid-template-columns:1fr}.copyright{flex-direction:column;gap:10px}}
 @media(max-width:600px){section{padding:85px 0}.page-hero{min-height:72vh;padding-bottom:65px}.page-title{font-size:66px}.grid4{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.gallery figure,.gallery figure:nth-child(n){height:390px}.form{grid-template-columns:1fr}.form .full{grid-column:auto}}
 .footer-contact a{line-height:1.65}.footer-contact a:hover{color:var(--gold)}
+
+/* GLOOMY BRIDAL SOCIAL SYSTEM — added without changing existing layout */
+.gb-social-title{margin-top:28px!important;margin-bottom:14px!important}
+.gb-social-links{display:flex;align-items:center;gap:10px;flex-wrap:wrap}
+.gb-social-link{position:relative;width:38px;height:38px;border:1px solid rgba(255,255,255,.16);display:inline-flex!important;align-items:center;justify-content:center;margin:0!important;color:#aaa!important;transition:.25s}
+.gb-social-link svg{width:17px;height:17px;fill:currentColor;stroke:currentColor}
+.gb-social-link:hover{color:#fff!important;border-color:rgba(201,169,106,.7);transform:translateY(-2px)}
+.gb-social-link::after{content:attr(data-label);position:absolute;left:50%;bottom:calc(100% + 9px);transform:translateX(-50%) translateY(4px);padding:7px 9px;background:#111;color:#f4f0e9;border:1px solid rgba(201,169,106,.35);font-size:9px;letter-spacing:1.2px;white-space:nowrap;opacity:0;pointer-events:none;transition:.2s;z-index:20}
+.gb-social-link:hover::after,.gb-social-link:focus-visible::after{opacity:1;transform:translateX(-50%) translateY(0)}
+.gb-float-social{position:fixed;right:22px;bottom:92px;display:flex;flex-direction:column;gap:10px;z-index:998;align-items:flex-end}
+.gb-float-btn{position:relative;width:50px;height:50px;border-radius:50%;display:flex!important;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.22);box-shadow:0 8px 24px rgba(0,0,0,.28);transition:.25s;background:#111;color:#fff!important}
+.gb-float-btn svg{width:20px;height:20px;fill:currentColor;stroke:currentColor}
+.gb-float-btn:hover{transform:translateY(-3px);border-color:rgba(201,169,106,.75)}
+.gb-float-btn::before{content:attr(data-label);position:absolute;right:calc(100% + 10px);top:50%;transform:translateY(-50%) translateX(5px);background:#111;color:#f4f0e9;border:1px solid rgba(201,169,106,.35);padding:8px 10px;font-size:9px;letter-spacing:1.2px;white-space:nowrap;opacity:0;pointer-events:none;transition:.2s}
+.gb-float-btn:hover::before,.gb-float-btn:focus-visible::before{opacity:1;transform:translateY(-50%) translateX(0)}
+.gb-float-wa{background:#25d366}.gb-float-ms{background:#168aff}
+.gb-top-btn{background:#111;cursor:pointer;font:inherit}
+@media(max-width:600px){
+  .gb-float-social{right:14px;bottom:86px;gap:8px}
+  .gb-float-btn{width:46px;height:46px}
+  .gb-float-btn::before{display:none}
+  .gb-social-links{gap:8px}
+  .gb-social-link{width:36px;height:36px}
+}
+
 </style></head><body>
 
 <header><nav class="nav">
@@ -82,6 +107,22 @@ const b=document.querySelector(".menu-toggle"),n=document.querySelector(".nav-li
 <a href="tel:+8801679731213">☎&nbsp;&nbsp; 01679 731213</a>
 <a href="https://maps.google.com/?q=Kazi+Nazrul+Islam+Sarak,+Nazib+Mansion+Market,+Shop+27,+Thana+Road,+Bogura" target="_blank">⌖&nbsp;&nbsp; Kazi Nazrul Islam Sarak, Nazib Mansion Market,<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Shop 27, Thana Road, Bogura</a>
 </div>
+
+<div class="footer-title gb-social-title">FOLLOW US</div>
+<div class="gb-social-links" aria-label="Gloomy Bridal social media">
+<a class="gb-social-link" data-label="Instagram" href="https://www.instagram.com/gloomybridal/" target="_blank" rel="noopener" aria-label="Instagram">
+<svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+<a class="gb-social-link" data-label="Facebook" href="https://www.facebook.com/GloomyBridal" target="_blank" rel="noopener" aria-label="Facebook">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 8h3V4h-3c-3.3 0-5 1.9-5 5v3H6v4h3v8h4v-8h3.5l.5-4H13V9c0-.7.3-1 1-1Z"/></svg></a>
+<a class="gb-social-link" data-label="Twitter / X" href="https://x.com/gloomybridal" target="_blank" rel="noopener" aria-label="Twitter / X">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23 22h-6.1l-4.8-6.3L6.6 22H3.5l7.3-8.4L3 2h6.2l4.3 5.7L18.9 2Zm-1.1 17.5h1.7L8.3 4.4H6.5L17.8 19.5Z"/></svg></a>
+<a class="gb-social-link" data-label="YouTube" href="https://www.youtube.com/@gloomybridal" target="_blank" rel="noopener" aria-label="YouTube">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2a2.8 2.8 0 0 0-2-2C17.8 4.7 12 4.7 12 4.7s-5.8 0-7.6.5a2.8 2.8 0 0 0-2 2C2 9 2 12 2 12s0 3 .4 4.8a2.8 2.8 0 0 0 2 2c1.8.5 7.6.5 7.6.5s5.8 0 7.6-.5a2.8 2.8 0 0 0 2-2C22 15 22 12 22 12s0-3-.4-4.8ZM10 15.5v-7l6 3.5-6 3.5Z"/></svg></a>
+<a class="gb-social-link" data-label="WhatsApp" href="https://wa.me/8801679731213" target="_blank" rel="noopener" aria-label="WhatsApp">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.9L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.3h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.1-1.2-6.1-3.5-8.3ZM12.2 21.5h-.1c-1.7 0-3.3-.5-4.8-1.4l-.3-.2-3.8 1 1-3.7-.2-.3a9.7 9.7 0 0 1-1.5-5.1C2.5 6.4 6.9 2 12.2 2c2.6 0 5.1 1 6.9 2.9a9.7 9.7 0 0 1 2.8 6.9c0 5.3-4.4 9.7-9.7 9.7Z"/><path d="M17.5 14.1c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-1.6-.8-2.7-1.4-3.8-3.2-.3-.5.3-.5.8-1.6.1-.2.1-.4 0-.6-.1-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.2 3.2c.2.2 2.2 3.4 5.4 4.8 2 .9 2.7 1 3.7.8.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.1-1.4-.1-.1-.3-.2-.6-.3Z"/></svg></a>
+<a class="gb-social-link" data-label="Messenger" href="https://m.me/GloomyBridal" target="_blank" rel="noopener" aria-label="Messenger">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.2 2 1.5 6.2 1.5 11.5c0 3 1.5 5.7 4 7.4V22l3.2-1.8c1 .3 2.1.4 3.3.4 5.8 0 10.5-4.2 10.5-9.1S17.8 2 12 2Zm1 12.7-2.7-2.9-5.3 2.9 5.9-6.3 2.7 2.9 5.2-2.9-5.8 6.3Z"/></svg></a>
+</div>
 </div>
 </div>
 <div class="copyright">
@@ -90,4 +131,22 @@ const b=document.querySelector(".menu-toggle"),n=document.querySelector(".nav-li
 </div>
 </div>
 </footer>
+
+<div class="gb-float-social" aria-label="Quick contact links">
+<a class="gb-float-btn gb-float-wa" data-label="WhatsApp" href="https://wa.me/8801679731213" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.9L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.3h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.1-1.2-6.1-3.5-8.3ZM12.2 21.5h-.1c-1.7 0-3.3-.5-4.8-1.4l-.3-.2-3.8 1 1-3.7-.2-.3a9.7 9.7 0 0 1-1.5-5.1C2.5 6.4 6.9 2 12.2 2c2.6 0 5.1 1 6.9 2.9a9.7 9.7 0 0 1 2.8 6.9c0 5.3-4.4 9.7-9.7 9.7Z"/><path d="M17.5 14.1c-.3-.2-1.7-.8-2-.9-.3-.1-.5-.2-.7.2-.2.3-.7.9-.8 1.1-.2.2-.3.2-.6.1-1.6-.8-2.7-1.4-3.8-3.2-.3-.5.3-.5.8-1.6.1-.2.1-.4 0-.6-.1-.2-.7-1.7-.9-2.3-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.1 1.1-1.1 2.6s1.1 3 1.2 3.2c.2.2 2.2 3.4 5.4 4.8 2 .9 2.7 1 3.7.8.6-.1 1.7-.7 2-1.4.2-.7.2-1.3.1-1.4-.1-.1-.3-.2-.6-.3Z"/></svg></a>
+<a class="gb-float-btn gb-float-ms" data-label="Messenger" href="https://m.me/GloomyBridal" target="_blank" rel="noopener" aria-label="Message on Messenger">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2C6.2 2 1.5 6.2 1.5 11.5c0 3 1.5 5.7 4 7.4V22l3.2-1.8c1 .3 2.1.4 3.3.4 5.8 0 10.5-4.2 10.5-9.1S17.8 2 12 2Zm1 12.7-2.7-2.9-5.3 2.9 5.9-6.3 2.7 2.9 5.2-2.9-5.8 6.3Z"/></svg></a>
+<button class="gb-float-btn gb-top-btn" data-label="Back to top" type="button" aria-label="Back to top">
+<svg viewBox="0 0 24 24" aria-hidden="true"><path d="m7 14 5-5 5 5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+</div>
+
+
+<script>
+(function(){
+  const topBtn=document.querySelector('.gb-top-btn');
+  if(topBtn) topBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+})();
+</script>
+
 </body></html>
