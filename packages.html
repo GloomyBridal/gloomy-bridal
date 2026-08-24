@@ -17,62 +17,38 @@ footer{background:#050505;padding:75px 0 30px}.footer-grid{display:grid;grid-tem
 .whatsapp{position:fixed;right:22px;bottom:22px;width:58px;height:58px;border-radius:50%;background:#25d366;color:#fff;display:flex;align-items:center;justify-content:center;z-index:999;font-weight:600}
 .gallery{display:grid;grid-template-columns:repeat(12,1fr);gap:14px}.gallery figure{height:430px;overflow:hidden;position:relative}.gallery figure:nth-child(1){grid-column:span 7}.gallery figure:nth-child(2){grid-column:span 5}.gallery figure:nth-child(3){grid-column:span 5}.gallery figure:nth-child(4){grid-column:span 7}.gallery img{width:100%;height:100%;object-fit:cover;transition:.7s}.gallery figure:hover img{transform:scale(1.05)}
 .price-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.price-card{padding:38px;border:1px solid #ddd;background:#fff}.price-card.featured{background:#0b0b0b;color:#fff;border-color:#0b0b0b;transform:translateY(-12px)}.price-card .num{color:#a9823e;letter-spacing:3px;font-size:9px}.price-card h3{font-family:"Cormorant Garamond",serif;font-size:38px;font-weight:400;margin:20px 0 12px}.price-card p{color:#777;line-height:1.8;font-size:13px}.price-card.featured p{color:#bbb}.price-card ul{list-style:none;margin:25px 0;display:grid;gap:10px}.price-card li{font-size:12px}.price-card li:before{content:"—";color:var(--gold);margin-right:9px}
+
+.show-more-wrap{margin-top:24px}.package-more{display:none}.package-more.open{display:block}.show-more-btn{background:transparent;border:1px solid #cfc8bc;color:#8a6b2f;padding:11px 22px;font-size:9px;letter-spacing:2px;text-transform:uppercase;cursor:pointer;font-family:inherit}.show-more-btn:hover{background:#111;color:#fff;border-color:#111}.price-card .covers{display:block;color:#777;font-size:12px;margin-top:4px}.price-card.featured .covers{color:#aaa}.availability{grid-template-columns:1.05fr .95fr}.status-list{display:grid;gap:10px;margin-top:28px}.status{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border:1px solid #ddd;background:#fff;font-size:11px}.status b{font-size:14px;line-height:1}.status strong{display:block;font-size:9px;letter-spacing:1.5px}.status small{display:block;color:#777;margin-top:4px;line-height:1.5}.status.available{border-color:#b9ead0}.status.pending{border-color:#f0df9d;background:#fffdf5}.status.booked{border-color:#aee8d0;background:#f7fffb}.date-box{background:#fff;border:1px solid #ddd;padding:30px}.date-box label{font-size:9px;letter-spacing:2px}.date-field{border:1px solid #ccc;padding:16px;margin:10px 0 16px;font-size:12px;color:#777}.date-box p{font-size:10px;color:#777;margin:12px 0;line-height:1.6}.btn-dark{background:#0b0b0b;color:#fff;border-color:#0b0b0b}.btn.book{display:block;margin-top:10px;text-align:center;background:#fff;color:#111;border-color:#ccc}.availability-note{font-size:13px;color:#777;line-height:1.8;max-width:560px;margin-top:22px}
 .form-wrap{max-width:720px}.form{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:35px}.form .full{grid-column:1/-1}.form label{font-size:9px;letter-spacing:2px;text-transform:uppercase}.form input,.form select,.form textarea{width:100%;margin-top:8px;padding:15px;border:1px solid #d8d3ca;background:#fff;font:inherit}.form textarea{min-height:140px;resize:vertical}
 @media(max-width:900px){.nav-links{display:none;position:absolute;top:75px;right:5%;width:280px;background:rgba(9,9,9,.97);padding:15px;border:1px solid var(--line);flex-direction:column}.nav-links.open{display:flex}.menu-toggle{display:flex}.nav-btn{display:none}.grid2,.grid3,.price-grid{grid-template-columns:1fr}.grid4{grid-template-columns:1fr 1fr}.price-card.featured{transform:none}.gallery{grid-template-columns:1fr 1fr}.gallery figure,.gallery figure:nth-child(n){grid-column:span 1;height:360px}.footer-grid{grid-template-columns:1fr}.copyright{flex-direction:column;gap:10px}}
 @media(max-width:600px){section{padding:85px 0}.page-hero{min-height:72vh;padding-bottom:65px}.page-title{font-size:66px}.grid4{grid-template-columns:1fr}.gallery{grid-template-columns:1fr}.gallery figure,.gallery figure:nth-child(n){height:390px}.form{grid-template-columns:1fr}.form .full{grid-column:auto}}
 .footer-contact a{line-height:1.65}.footer-contact a:hover{color:var(--gold)}
-</style>
-<style>
-.availability{grid-template-columns:1.05fr .95fr}
-.status-list{display:grid;gap:10px;margin-top:28px}
-.status{display:flex;gap:12px;align-items:flex-start;padding:14px 16px;border:1px solid #ddd;background:#fff;font-size:11px}
-.status b{font-size:14px;line-height:1}
-.status strong{display:block;font-size:9px;letter-spacing:1.5px}
-.status small{display:block;color:#777;margin-top:4px;line-height:1.5}
-.status.available{border-color:#b9ead0}.status.pending{border-color:#f0df9d;background:#fffdf5}.status.booked{border-color:#aee8d0;background:#f7fffb}
-.date-box{background:#fff;border:1px solid #ddd;padding:30px}
-.date-box label{font-size:9px;letter-spacing:2px}
-.date-field{border:1px solid #ccc;padding:16px;margin:10px 0 16px;font-size:12px;color:#777}
-.date-box p{font-size:10px;color:#777;margin:12px 0;line-height:1.6}
-.btn-dark{background:#0b0b0b;color:#fff;border-color:#0b0b0b}
-.btn.book{display:block;margin-top:8px;text-align:center;background:#fff;color:#111;border-color:#ccc}
-.requested-grid{grid-template-columns:repeat(3,1fr)}
-.package-price{font-family:"Cormorant Garamond",serif;font-size:42px;line-height:1;margin-top:18px;color:inherit}
-.covers{display:block;color:#777;font-size:10px;margin-top:5px}
-.price-card.featured .covers{color:#aaa}
-.price-card.featured{position:relative}
-.price-card.featured:before{content:"MOST POPULAR";position:absolute;top:-12px;left:50%;transform:translateX(-50%);background:var(--gold);color:#111;padding:5px 18px;font-size:8px;letter-spacing:2px;white-space:nowrap}
-@media(max-width:900px){.availability,.requested-grid{grid-template-columns:1fr}}
-</style>
 
-<style>
-.show-more-btn{
-  display:flex;align-items:center;justify-content:center;gap:8px;
-  width:100%;margin:18px 0 10px;padding:10px 14px;background:transparent;
-  border:1px solid #d8d0bd;border-radius:22px;color:#8a6a19;
-  font-size:9px;letter-spacing:2px;font-weight:600;cursor:pointer;
-}
-.show-more-btn:hover{background:#f7f3ea}
-.show-more-btn span{font-size:14px;line-height:8px;transition:transform .2s}
-.show-more-btn[aria-expanded="true"] span{transform:rotate(180deg)}
-.more-details[hidden]{display:none}
-.package-list{margin-bottom:0}
-.extra-list{margin-top:0}
-</style>
-<script>
-document.addEventListener('DOMContentLoaded',function(){
-  document.querySelectorAll('.show-more-btn').forEach(function(btn){
-    btn.addEventListener('click',function(){
-      const box=btn.previousElementSibling;
-      const open=btn.getAttribute('aria-expanded')==='true';
-      btn.setAttribute('aria-expanded',String(!open));
-      box.hidden=open;
-      btn.childNodes[0].textContent=open?'SHOW MORE ':'SHOW LESS ';
-    });
-  });
-});
-</script>
-</head><body>
+/* Package detail styling */
+.package-card{padding:28px 28px 22px;overflow:hidden}
+.package-card .pkg-section{margin-top:20px}
+.package-card .pkg-section-title{font-size:10px;letter-spacing:2px;font-weight:600;padding:0 0 10px;border-bottom:1px solid rgba(0,0,0,.12);display:flex;align-items:center;gap:8px}
+.package-card.featured .pkg-section-title{border-color:rgba(255,255,255,.16)}
+.camera-icon{width:13px;height:10px;border:1.5px solid currentColor;border-radius:2px;display:inline-block;position:relative;flex:none}
+.camera-icon:before{content:"";position:absolute;width:4px;height:3px;border:1px solid currentColor;border-bottom:0;left:2px;top:-4px;border-radius:1px}
+.camera-icon:after{content:"";position:absolute;width:4px;height:4px;border:1px solid currentColor;border-radius:50%;left:3px;top:1px}
+.package-card ul{list-style:none;margin:10px 0 0;display:grid;gap:7px}
+.package-card li{font-size:11px;line-height:1.35;display:flex;align-items:flex-start;gap:7px}
+.package-card li:before{content:"✓";color:var(--gold);font-weight:600;flex:none}
+.package-card li.disabled{color:#999;text-decoration:line-through}
+.package-card li.disabled:before{content:"×";color:#aaa}
+.package-card.featured li:before{color:#c9a96a}
+.package-card .package-more{margin-top:4px}
+.package-card .package-more .pkg-section:first-child{margin-top:20px}
+.package-card .show-more-wrap{display:flex;justify-content:center;margin:22px 0 14px}
+.package-card .show-more-btn{border:1px solid #d2ccc2;border-radius:20px;padding:9px 18px;background:transparent;color:#8a6b2f}
+.package-card.featured .show-more-btn{border-color:#8a6b2f;color:#d2b15f}
+.package-card .show-more-btn span{font-size:12px;margin-left:5px}
+.package-card .btn{display:block;text-align:center;width:100%;margin-top:8px}
+.package-card .package-price{font-family:"Cormorant Garamond",serif;font-size:35px;margin-top:18px}
+.package-card.featured .package-price{color:#fff}
+.package-card.featured .pkg-section-title{color:#fff}
+</style></head><body>
 
 <header><nav class="nav">
 <a href="index.html" class="logo"><img src="logo%20whiteee.png" alt="Gloomy Bridal"></a>
@@ -86,10 +62,12 @@ document.addEventListener('DOMContentLoaded',function(){
 <a href="contact.html" class="nav-btn">Book Your Date</a>
 <button class="menu-toggle" aria-label="Open menu"><span></span></button>
 </nav></header>
+
 <section class="page-hero" style="background-image:url('Fbs.jpg')">
   <div class="container">
     <div class="eyebrow">Investment & Packages</div>
-    <h1 class="page-title">Investment &<br>Packages</h1>
+    <h1 class="page-title">Choose the perfect<br><em>collection for your story.</em></h1>
+    <p class="page-subtitle">Transparent wedding photography and cinematic packages, crafted around your moments, your people and your day.</p>
   </div>
 </section>
 
@@ -99,9 +77,7 @@ document.addEventListener('DOMContentLoaded',function(){
     <div class="grid2 availability" style="margin-top:14px;align-items:start">
       <div>
         <h2 class="section-title" style="font-size:clamp(42px,5vw,68px)">Check if your dates are open</h2>
-        <p class="muted" style="max-width:560px;line-height:1.8;margin-top:22px">
-          Pick individual dates to see whether we are available for your shoot. Gaps are fine (e.g. 18, 20, 24). Pending and confirmed bookings block the calendar.
-        </p>
+        <p class="availability-note">Pick individual dates to see whether we are available for your shoot. Gaps are fine (e.g. 18, 20, 24). Pending and confirmed bookings block the calendar.</p>
         <div class="status-list">
           <div class="status available"><b>✓</b><span><strong>AVAILABLE</strong><small>Open dates — you can proceed to book.</small></span></div>
           <div class="status pending"><b>−</b><span><strong>PENDING</strong><small>Someone already requested these dates.</small></span></div>
@@ -117,117 +93,99 @@ document.addEventListener('DOMContentLoaded',function(){
       </div>
     </div>
 
-    <div class="price-grid requested-grid" style="margin-top:55px">
+    <div class="section-label" style="margin-top:110px">Our Packages</div>
+    <h2 class="section-title">Choose the perfect<br><em>way to remember.</em></h2>
+    <p class="muted" style="max-width:700px;line-height:1.8;margin-top:25px">Thoughtfully designed collections for wedding photography, cinematic coverage and complete storytelling. Final coverage can be tailored around your event and requirements.</p>
 
-      <div class="price-card">
-        <div class="num">COLLECTION I</div>
-        <h3>Silver Package</h3>
-        <p>Simple, elegant, and affordable. Perfect for intimate celebrations, the Silver Package offers professional photography and cinematography to beautifully preserve your special moments with exceptional quality and care.</p>
-        <div class="package-price">13,000৳</div><span class="covers">Covers 1 day</span>
-        <ul>
-          <li>1 Professional Photographer</li>
-          <li>Unlimited Digital Captures</li>
-          <li>50 Professionally Edited Frames</li>
-          <li>Digital Delivery within 7 Days</li>
-        </ul>
-        <a class="btn btn-dark" href="contact.html">↗ &nbsp; VIEW PACKAGE</a>
-        <a class="btn book" href="contact.html">▣ &nbsp; BOOK NOW</a>
-      </div>
+    <div class="price-grid package-grid" style="margin-top:55px">
 
-      <div class="price-card">
-        <div class="num">COLLECTION II</div>
-        <h3>Premium Experience</h3>
-        <p>Full premium coverage with extended team and deluxe deliverables.</p>
-        <div class="package-price">18,000৳</div><span class="covers">Covers 1 day</span>
-        <ul>
-          <li>1 Chief Photographer ( 5 Hour )</li>
-          <li>Unlimited Digital Captures</li>
-          <li>All Post-Processed</li>
-          <li>50 Prints (4R – 4×6")</li>
-          <li>1 Cinematographer ( 5 Hour )</li>
-          <li>Cinematic Film (2–5 Mins)</li>
-          <li>1080P Full Video Coverage</li>
-          <li>Exclusive Portrait Light Setup</li>
-          <li>Google Drive / Client’s Pen Drive</li>
-        </ul>
-        <a class="btn btn-dark" href="contact.html">↗ &nbsp; VIEW PACKAGE</a>
-        <a class="btn book" href="contact.html">▣ &nbsp; BOOK NOW</a>
-      </div>
+<div class="price-card package-card">
+  <div class="num">COLLECTION I</div><h3>Silver Package</h3>
+  <p>Simple, elegant, and affordable. Perfect for intimate celebrations, the Silver Package offers professional photography and cinematography to beautifully preserve your special moments with exceptional quality and care.</p>
+  <div class="package-price">৳13,000</div><span class="covers">Covers 1 day</span>
 
-      <div class="price-card featured">
-        <div class="num">COLLECTION III</div>
-        <h3>Most Premium combo</h3>
-        <p>The ultimate luxury wedding experience. Our most exclusive package is designed for couples who want nothing but the best. Featuring an experienced creative team, drone coverage, a premium wedding album, cinematic storytelling, and luxury delivery, it ensures every moment is captured in its finest form.</p>
-        <div class="package-price">30,000৳</div><span class="covers">Covers 1 day</span>
-        <ul>
-          <li>Chief Photographer + 1 Associate Photographer</li>
-          <li>Unlimited Digital Captures</li>
-          <li>Unlimited Photos (All Post-Processed)</li>
-          <li>1 Premium Album (20 Sheets, 12×15")</li>
-          <li>2 Top Cinematographers + Drone Coverage</li>
-          <li>Cinematic Film (2–5 Mins)</li>
-          <li>1080P Video Resolution ( Full Video )</li>
-          <li>Full Ceremony Raw Footage</li>
-          <li>Google Drive / Client’s Pen Drive</li>
-          <li>Premium Portrait Light Setup</li>
-        </ul>
-        <a class="btn btn-primary" href="contact.html">↗ &nbsp; VIEW PACKAGE</a>
-        <a class="btn book" href="contact.html">▣ &nbsp; BOOK NOW</a>
-      </div>
+  <div class="pkg-section"><div class="pkg-section-title"><span class="camera-icon"></span> PHOTOGRAPHY</div>
+    <ul><li>1 Professional Photographer</li><li>Unlimited Digital Captures</li><li>50 Professionally Edited Frames</li><li>Digital Delivery within 7 Days</li></ul>
+  </div>
 
-      <div class="price-card">
-        <div class="num">ONLY PHOTOGRAPHY</div>
-        <h3>Basic Frame</h3>
-        <div class="package-price">6,000৳</div><span class="covers">Covers 1 day</span>
-        <ul>
-          <li>1 Photographer</li>
-          <li>Coverage: 5 Hours</li>
-          <li>All Post-Processed</li>
-          <li>Google Drive</li>
-        </ul>
-        <a class="btn btn-dark" href="contact.html">↗ &nbsp; VIEW PACKAGE</a>
-        <a class="btn book" href="contact.html">▣ &nbsp; BOOK NOW</a>
-      </div>
+  <div class="package-more">
+    <div class="pkg-section"><div class="pkg-section-title"><span class="camera-icon"></span> CINEMATOGRAPHY</div>
+      <ul><li>1 Professional Cinematographer</li><li>Cinematic Highlight Reel (2–3 Mins)</li><li>1080p Video Resolution (Full Video)</li><li class="disabled">Full Ceremony Raw Footage</li></ul>
+    </div>
+    <div class="pkg-section"><div class="pkg-section-title">DELIVERY</div><ul><li>Google Drive / Client’s Pen Drive</li></ul></div>
+    <div class="pkg-section"><div class="pkg-section-title">EVENT DURATION</div><ul><li>5 Hours</li></ul></div>
+  </div>
+  <div class="show-more-wrap"><button class="show-more-btn" type="button">SHOW MORE <span>⌄</span></button></div>
+  <a class="btn" href="contact.html">↗ &nbsp; VIEW PACKAGE</a><a class="btn book" href="contact.html">▣ &nbsp; BOOK NOW</a>
+</div>
 
-      <div class="price-card">
-        <div class="num">ONLY PHOTOGRAPHY</div>
-        <h3>Standard Frame</h3>
-        <div class="package-price">12,000৳</div><span class="covers">Covers 1 day</span>
-        <ul>
-          <li>Dual Artist Team (2 Photographers)</li>
-          <li>Unlimited Digital Captures</li>
-          <li>All Post-Processed</li>
-          <li>50 Prints (4R – 4×6")</li>
-          <li>Google Drive / Client’s Pen Drive</li>
-        </ul>
-        <a class="btn btn-dark" href="contact.html">↗ &nbsp; VIEW PACKAGE</a>
-        <a class="btn book" href="contact.html">▣ &nbsp; BOOK NOW</a>
-      </div>
+<div class="price-card package-card">
+  <div class="num">COLLECTION II</div><h3>Premium Experience</h3>
+  <p>Full premium coverage with an extended team and deluxe deliverables.</p>
+  <div class="package-price">৳18,000</div><span class="covers">Covers 1 day</span>
 
-      <div class="price-card">
-        <div class="num">ONLY PHOTOGRAPHY</div>
-        <h3>Premium Frame</h3>
-        <div class="package-price">18,000৳</div><span class="covers">Covers 1 day</span>
-        <ul>
-          <li>1 Chief Photographer + 2 Senior Photographers</li>
-          <li>Unlimited Digital Captures</li>
-          <li>All Post-Processed</li>
-          <li>50 Prints (4R – 4×6")</li>
-          <li>Google Drive / Client’s Pen Drive</li>
-        </ul>
-        <a class="btn btn-dark" href="contact.html">↗ &nbsp; VIEW PACKAGE</a>
-        <a class="btn book" href="contact.html">▣ &nbsp; BOOK NOW</a>
-      </div>
+  <div class="pkg-section"><div class="pkg-section-title"><span class="camera-icon"></span> PHOTOGRAPHY</div>
+    <ul><li>1 Chief Photographer ( 5 Hour )</li><li>Unlimited Digital Captures</li><li>All Post-Processed</li><li>50 Prints (4R – 4×6")</li></ul>
+  </div>
 
+  <div class="package-more">
+    <div class="pkg-section"><div class="pkg-section-title"><span class="camera-icon"></span> CINEMATOGRAPHY</div>
+      <ul><li>1 Cinematographer ( 5 Hour )</li><li>Cinematic Film (2–5 Mins)</li><li>1080P Full Video Coverage</li></ul>
+    </div>
+    <div class="pkg-section"><div class="pkg-section-title">SETUP</div><ul><li>Exclusive Portrait Light Setup</li></ul></div>
+    <div class="pkg-section"><div class="pkg-section-title">DELIVERY</div><ul><li>Google Drive / Client’s Pen Drive</li></ul></div>
+  </div>
+  <div class="show-more-wrap"><button class="show-more-btn" type="button">SHOW MORE <span>⌄</span></button></div>
+  <a class="btn" href="contact.html">↗ &nbsp; VIEW PACKAGE</a><a class="btn book" href="contact.html">▣ &nbsp; BOOK NOW</a>
+</div>
+
+<div class="price-card featured package-card">
+  <div class="num">COLLECTION III</div><h3>Most Premium Combo</h3>
+  <p>The ultimate luxury wedding experience. Our most exclusive package is designed for couples who want nothing but the best. Featuring an experienced creative team, drone coverage, a premium wedding album, cinematic storytelling, and luxury delivery, it ensures every moment is captured in its finest form.</p>
+  <div class="package-price">৳30,000</div><span class="covers">Covers 1 day</span>
+
+  <div class="pkg-section"><div class="pkg-section-title"><span class="camera-icon"></span> PHOTOGRAPHY</div>
+    <ul><li>Chief Photographer + 1 Associate Photographer</li></ul>
+  </div>
+
+  <div class="package-more">
+    <div class="pkg-section"><div class="pkg-section-title">PHOTOGRAPHY</div>
+      <ul><li>Unlimited Digital Captures</li><li>Unlimited Photos (All Post-Processed)</li><li>1 Premium Album (20 Sheets, 12×15")</li></ul>
+    </div>
+    <div class="pkg-section"><div class="pkg-section-title"><span class="camera-icon"></span> CINEMATOGRAPHY</div>
+      <ul><li>2 Top Cinematographers + Drone Coverage</li><li>Cinematic Film (2–5 Mins)</li><li>1080P Video Resolution ( Full Video )</li><li>Full Ceremony Raw Footage</li></ul>
+    </div>
+    <div class="pkg-section"><div class="pkg-section-title">DELIVERY</div><ul><li>Google Drive / Client’s Pen Drive</li></ul></div>
+    <div class="pkg-section"><div class="pkg-section-title">SETUP</div><ul><li>Premium Portrait Light Setup</li></ul></div>
+  </div>
+  <div class="show-more-wrap"><button class="show-more-btn" type="button">SHOW MORE <span>⌄</span></button></div>
+  <a class="btn btn-primary" href="contact.html">↗ &nbsp; VIEW PACKAGE</a><a class="btn book" href="contact.html">▣ &nbsp; BOOK NOW</a>
+</div>
+
+</div>
+<section class="paper" style="padding-top:20px">
+  <div class="container">
+    <div class="section-label">Only Photography</div>
+    <h2 class="section-title">Photography<br><em>collections.</em></h2>
+    <div class="price-grid package-grid" style="margin-top:55px">
+<div class="price-card package-card"><div class="num">ONLY PHOTOGRAPHY</div><h3>Basic Frame</h3><div class="package-price">৳6,000</div><span class="covers">Covers 1 day</span><div class="pkg-section"><div class="pkg-section-title"><span class="camera-icon"></span> PHOTOGRAPHY</div><ul><li>1 Photographer</li><li>Coverage: 5 Hours</li><li>All Post-Processed</li></ul></div><div class="package-more"><div class="pkg-section"><div class="pkg-section-title">DELIVERY</div><ul><li>Google Drive</li></ul></div></div><div class="show-more-wrap"><button class="show-more-btn" type="button">SHOW MORE <span>⌄</span></button></div><a class="btn" href="contact.html">↗ &nbsp; VIEW PACKAGE</a><a class="btn book" href="contact.html">▣ &nbsp; BOOK NOW</a></div>
+<div class="price-card package-card"><div class="num">ONLY PHOTOGRAPHY</div><h3>Standard Frame</h3><div class="package-price">৳12,000</div><span class="covers">Covers 1 day</span><div class="pkg-section"><div class="pkg-section-title"><span class="camera-icon"></span> PHOTOGRAPHY</div><ul><li>Dual Artist Team (2 Photographers)</li><li>Unlimited Digital Captures</li><li>All Post-Processed</li><li>50 Prints (4R – 4×6")</li></ul></div><div class="package-more"><div class="pkg-section"><div class="pkg-section-title">DELIVERY</div><ul><li>Google Drive / Client’s Pen Drive</li></ul></div></div><div class="show-more-wrap"><button class="show-more-btn" type="button">SHOW MORE <span>⌄</span></button></div><a class="btn" href="contact.html">↗ &nbsp; VIEW PACKAGE</a><a class="btn book" href="contact.html">▣ &nbsp; BOOK NOW</a></div>
+<div class="price-card package-card"><div class="num">ONLY PHOTOGRAPHY</div><h3>Premium Frame</h3><div class="package-price">৳18,000</div><span class="covers">Covers 1 day</span><div class="pkg-section"><div class="pkg-section-title"><span class="camera-icon"></span> PHOTOGRAPHY</div><ul><li>1 Chief Photographer + 2 Senior Photographers</li><li>Unlimited Digital Captures</li><li>All Post-Processed</li><li>50 Prints (4R – 4×6")</li></ul></div><div class="package-more"><div class="pkg-section"><div class="pkg-section-title">DELIVERY</div><ul><li>Google Drive / Client’s Pen Drive</li></ul></div></div><div class="show-more-wrap"><button class="show-more-btn" type="button">SHOW MORE <span>⌄</span></button></div><a class="btn" href="contact.html">↗ &nbsp; VIEW PACKAGE</a><a class="btn book" href="contact.html">▣ &nbsp; BOOK NOW</a></div>
+</div>
+<section class="dark">
+  <div class="container">
+    <div class="section-label">The Experience</div>
+    <h2 class="section-title">From first hello<br><em>to forever.</em></h2>
+    <div class="grid4" style="margin-top:50px">
+      <div class="card"><div class="section-label">01</div><h3>Tell Us</h3><p>Share your date, venue and vision.</p></div>
+      <div class="card"><div class="section-label">02</div><h3>Plan</h3><p>Build the coverage around your events.</p></div>
+      <div class="card"><div class="section-label">03</div><h3>Live</h3><p>Be present. We capture the in-between.</p></div>
+      <div class="card"><div class="section-label">04</div><h3>Relive</h3><p>Receive a story made to last.</p></div>
     </div>
   </div>
 </section>
-<a href="https://wa.me/8801679731213" class="whatsapp" target="_blank" aria-label="Chat on WhatsApp">WA</a>
 
-<script>
-const h=document.querySelector("header");window.addEventListener("scroll",()=>h.classList.toggle("scrolled",scrollY>50));
-const b=document.querySelector(".menu-toggle"),n=document.querySelector(".nav-links");if(b)b.onclick=()=>n.classList.toggle("open");
-</script><footer>
+<footer>
 <div class="container">
 <div class="footer-grid">
 <div>
@@ -262,4 +220,10 @@ const b=document.querySelector(".menu-toggle"),n=document.querySelector(".nav-li
 </div>
 </div>
 </footer>
-</body></html>
+<a href="https://wa.me/8801679731213" class="whatsapp" target="_blank" aria-label="Chat on WhatsApp">WA</a>
+
+<script>
+const h=document.querySelector("header");window.addEventListener("scroll",()=>h.classList.toggle("scrolled",scrollY>50));
+const b=document.querySelector(".menu-toggle"),n=document.querySelector(".nav-links");if(b)b.onclick=()=>n.classList.toggle("open");
+document.querySelectorAll(".show-more-btn").forEach(btn=>{btn.addEventListener("click",()=>{const more=btn.closest(".price-card").querySelector(".package-more");const open=more.classList.toggle("open");btn.innerHTML=open?"SHOW LESS <span>⌃</span>":"SHOW MORE <span>⌄</span>";});});
+</script></body></html>
